@@ -1,0 +1,47 @@
+# Varibles d'environnement
+.env.local
+.env
+.env.*.local
+
+# Dossier du précédent projet (old)
+old/
+
+# Fichier de session
+settings.json
+
+# Dossier des dépendances
+node_modules/
+vendor/
+dist/
+build/
+.cache/
+out/
+.next/
+public/build/
+.svelte-kit/
+.nuxt/
+.pnp/
+.cargo/
+# Fichiers de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.swp
+*~
+
+# Fichiers compilés
+*.class
+__pycache__/
+.github/
+.vscode/
+.idea/
+.DS_Store
+
+# Environnements virtuels Python
+.venv/
