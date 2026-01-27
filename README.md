@@ -1,7 +1,7 @@
-# 🤖 InstaBot - Bot Instagram Automatisé (GitHub Actions + Telegram Trigger)
+# 🤖 InstaBot - Bot Instagram Automatisé (Via cron VPS + Telegram Trigger)
 
 Ce projet contient un bot Instagram automatisé qui peut être :
-- 🕒 lancé automatiquement 2 fois par jour grâce à **GitHub Actions** (cron)
+- 🕒 lancé automatiquement 2 fois par jour grâce à **Via cron VPS** (cron)
 - 🧑‍💻 lancé manuellement via une commande Telegram
 
 ## 📦 Fonctionnalités
@@ -10,7 +10,7 @@ Ce projet contient un bot Instagram automatisé qui peut être :
 - Actions Instagram personnalisées (liker, commenter, etc.)
 - Envoi d’un message à un bot Telegram en cas de succès/échec
 - Déclenchement manuel du script via une commande Telegram
-- Exécution automatique 2 fois par jour via GitHub Actions
+- Exécution automatique 2 fois par jour via Via cron VPS
 
 ---
 
@@ -44,8 +44,8 @@ python script.py
 
 
 
-🚀 Automatisation avec GitHub Actions
-📁 Fichier GitHub Actions : .github/workflows/instabot.yml
+🚀 Automatisation avec Via cron VPS
+📁 Fichier Via cron VPS : .github/workflows/instabot.yml
 Ce fichier est déjà prêt dans le dépôt. Il déclenche le script automatiquement 2 fois par jour (à 9h et 21h, heure de Paris).
 
 🔐 Ajouter les secrets GitHub
@@ -81,7 +81,7 @@ Modifier
 ├── requirements.txt           # Dépendances Python
 ├── .github/
 │   └── workflows/
-│       └── instabot.yml       # Tâche GitHub Actions
+│       └── instabot.yml       # Tâche Via cron VPS
 ├── README.md                  # Ce fichier
 
 
@@ -100,7 +100,7 @@ Le script est prévu pour un usage éthique et personnel.
 
 Ne pas abuser des appels à l’API Instagram pour éviter les bans.
 
-GitHub Actions ne permet pas d’écouter Telegram en continu. Pour cela, hébergez telegram_trigger.py sur une machine ou un serveur.
+Via cron VPS ne permet pas d’écouter Telegram en continu. Pour cela, hébergez telegram_trigger.py sur une machine ou un serveur.
 
 🙋‍♂️ Auteur
 Développé par Jeremie : jeremien6
