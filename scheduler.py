@@ -1,14 +1,21 @@
-import schedule
-import time
+import random
 import subprocess
+import time
+
+import schedule
+
 
 def job():
     print("⏰ Lancement automatique du script Instagram...")
-    subprocess.run(["python", "script.py"])
+    subprocess.run(["python", "script.py"], check=False)
 
-# 2 exécutions par jour
-schedule.every().day.at("10:00").do(job)
-schedule.every().day.at("18:00").do(job)
+
+def _register_daily_job(hour, minute):
+    schedule.every(2).days.at(f"{hour:02d}:{minute:02d}").do(job)
+
+
+# Exécution tous les 2 jours à une heure légèrement aléatoire pour casser le pattern
+_register_daily_job(hour=10, minute=random.randint(0, 20))
 
 while True:
     schedule.run_pending()
