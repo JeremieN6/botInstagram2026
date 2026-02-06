@@ -158,7 +158,7 @@ def send_telegram_message(message):
             "text": message,
             "parse_mode": "Markdown"
         }
-        requests.get(url, params=params)
+        requests.get(url, params=params, timeout=10)
     except Exception as e:
         print(f"[Telegram Error] {e}")
 
